@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio_me</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Skip link -->
+    <a href="#main-content" id="skip-link" class="skip-link">Skip Link</a>
+    <div class="wrapper layout-wrapper">
+      <!-- Header content -->
+      <header id="header" class="header">
+        <!-- website title -->
+        <h1>portfolio_me</h1>
+        <!-- navigation links -->
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a href="#hero-section">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#project-section">Projects</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Main contents -->
+      <main id="main-content">
+        <!-- Hero section -->
+        <section class="hero-section" id="hero-section" aria-labelledby="self-intro">
+          <div class="hero-content" id="self-intro">
+            <h3>Hi,</h3>
+            <h2><strong>I'm Dibyadarshan Sahoo</strong></h2>
+            <h3>Frontend Developer</h3>
+            <p class="muted">aimed for enjoyable interaction</p>
+            <button><a href="#project-section">View my works</a></button>
+          </div>
+        </section>
+        <!-- About section -->
+        <section class="about-section" id="about-section" aria-labelledby="about-heading">
+          <h2 id="about-heading""><b>About Me</b></h2>
+          <div class="about-content">
+            <div class="profile-image">
+              <img
+                src="images/profile-image.png"
+                alt="Dibyadarshan Sahoo's profile"
+              />
+            </div>
+            <h4>Developer</h4>
+            <p>
+              I am a fresher frontend developer who strive to create intuitive
+              and seamless browsing experiences. I believe that a well-developed
+              website should not only look visually appealing but also provide a
+              smooth and enjoyable interaction for visitors, not for any
+              visitors but for all visitors. When starting a new project, I
+              thoroughly research and analyze the target audience and the
+              client's specific requirements. This enables me to tailor my
+              design and development to meet their expectations and deliver a
+              unique online presence that aligns with their brand identity.
+            </p>
+          </div>
+        </section>
+        <!-- Skill section -->
+        <section class="skill-section" id="skill-section" aria-labelledby="skill-heading">
+          <h2 id="skill-heading"><b>My Skills</b></h2>
+          <div class="skill-card-grid">
+            <div class="skill-card technical-sk" aria-labelledby="tech-skill-heading">
+              <h4 id="tech-skill-heading">Technical Skills</h4>
+              <ul>
+                <li>HTML</li>
+                <div class="prog-bar prog-html">
+                  <div class="prog-live"></div>
+                </div>
+                <li>CSS</li>
+                <div class="prog-bar prog-css">
+                  <div class="prog-live"></div>
+                </div>
+                <li>GIT AND GITHUB</li>
+                <div class="prog-bar prog-git">
+                  <div class="prog-live"></div>
+                </div>
+              </ul>
+            </div>
+            <div class="skill-card professional-sk" aria-labelledby="prof-skill-heading">
+              <h4 id="prof-skill-heading">Professional Skills</h4>
+              <ul>
+                <li>Creativity</li>
+                <div class="prog-bar prog-crtv">
+                  <div class="prog-live"></div>
+                </div>
+                <li>Communication</li>
+                <div class="prog-bar prog-comm">
+                  <div class="prog-live"></div>
+                </div>
+                <li>Problem Solving</li>
+                <div class="prog-bar prog-prslv">
+                  <div class="prog-live"></div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- Project section -->
+        <section class="project-section" id="project-section" aria-labelledby="projects-heading">
+          <h2 id="projects-heading"><b>Projects</b></h2>
+          <div class="project project-grid">
+            <article class="grid-card" aria-labelledby="lotr-heading">
+              <h3 id="lotr-heading">Lord of the Recipies</h3>
+              <img
+                src="images/lord-of-the-recipes.png"
+                alt="a recipe website named lord of the recipes"
+              />
+              <p class="muted"><em>Type: Website</em></p>
+              <p class="about-project">
+                Lord of the recipes is a responsive website to help you learn
+                more about cooking recipes.
+              </p>
+              <button><a href="#">View Site</a></button>
+            </article>
+          </div>
+        </section>
+        <!-- Contact section -->
+        <section class="contact-section" id="contact-section" aria-labelledby="contact-heading">
+          <h2 id="contact-heading"><b>Contact Me</b></h2>
+          <form action="/send-message" method="post">
+            <div class="name-user user-info">
+              <label for="your-name">Your Name:&ThinSpace;<span aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                name="your-name"
+                id="you-name"
+                minlength="5"
+                required
+                maxlength="50"
+                autocomplete="off"
+              />
+            </div>
+            <div class="email-user user-info">
+              <label for="email">Your Email:&ThinSpace;<span aria-hidden="true">*</span></label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                aria-describedby="email-error" 
+                required
+              />
+              <span id="email-error" role="alert">Please enter a valid email address.
+              </span>
+            </div>
+            <div class="message-user user-info">
+              <label for="message">Your Message:&ThinSpace;<span aria-hidden="true">*</span></label>
+              <textarea
+                name="message"
+                id="message"
+                cols="23"
+                rows="8"
+                minlength="20"
+                maxlength="400"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </section>
+      </main>
+      <!-- Footer section -->
+      <footer class="footer" id="footer">
+        <div class="brand-name">
+          <h3><b>portfolio_me</b></h3>
+          <p><small>&copy;2026</small></p>
+        </div>
+        <!-- Footer Navigation -->
+        <nav aria-label="Footer navigation">
+          <ul>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
