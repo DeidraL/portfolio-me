@@ -3,7 +3,7 @@
   /* Colour Tokens */
   --color-bg: #e8edf2;
   --color-card-bg: #dbdad3;
-  --color-input-bg: #fffdf1;
+  --color-input-bg: #f9f5de;
   --color-primary: #2c3947;
   --color-seconary: #547a95;
   --color-text: #2d2d2d;
@@ -529,9 +529,9 @@ footer nav ul a:hover {
 /* Accessibility: motion preferences in animations */
 @media (prefers-reduced-motion: reduce) {
   * {
-    /* animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important; */
+    transition-duration: 0.01ms !important;
   }
 }
 /* Accessibility: Larger tap targets on touch devices */
